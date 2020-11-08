@@ -10,6 +10,7 @@
         "../scss/components/_nav.scss",
         "../scss/components/_header.scss",
         "../scss/components/_main.scss",
+        "../scss/components/_aside-footer.scss",
         "../scss/components/_aside.scss",
         "../scss/components/_footer.scss"
     ],
