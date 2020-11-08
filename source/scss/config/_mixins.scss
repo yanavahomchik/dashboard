@@ -5,3 +5,9 @@
     flex-direction: $direction;
     flex-wrap:$wrap;
 }
+
+@mixin fonts ($font-size, $font-weight) {
+    font-family: 'Lato' sans-serif;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
