@@ -1,8 +1,9 @@
 /* color 
  =================================================== */
-$gradient:linear-gradient(352deg, rgba(254,84,122,1) 0%, rgba(253,128,109,1) 100%);
+$gradient:linear-gradient(to top, rgba(254,84,122,1), rgba(253,128,109,1));
 $accent-color:#FD7858;
 $bg-grey:#BFBFBF;
+$bg-white:#FFFFFF;
 $subtitle-color:#BFBFBF;
 $title-color:#777777;
 
@@ -12,4 +13,4 @@ $title-color:#777777;
  $small-text:10px;
  $medium-text:12px;
  $large-text:14px;
- $xlarge-text:20px;
+ $xlarge-text:40px;

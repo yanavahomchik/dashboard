@@ -376,8 +376,6 @@ textarea {
   position: relative;
   height: 100vh;
   margin: 0 auto;
-  list-style-type: none;
-  text-decoration: none;
 }
 
 .navigation {
@@ -386,12 +384,26 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70px;
+  height: 100vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fe547a), to(#fd806d));
+  background: linear-gradient(to top, #fe547a, #fd806d);
+}
+
+.navigation__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -399,7 +411,51 @@ textarea {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 70px;
-  height: 100vh;
-  background-color: linear-gradient(352deg, #fe547a 0%, #fd806d 100%);
+  min-height: 70px;
+  padding-bottom: 10px;
+  color: #FFFFFF;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.navigation__link-text {
+  margin-top: 40px;
+}
+
+.navigation__link:first-child {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Lato' sans-serif;
+  font-size: 40px;
+  background-color: #FFFFFF;
+  color: #FD7858;
+  -webkit-box-shadow: 5px -1px 5px #BFBFBF;
+          box-shadow: 5px -1px 5px #BFBFBF;
+}
+
+.navigation__link:last-child {
+  margin-top: auto;
+  background: url(../img/nav/power_icon.png) no-repeat center;
+}
+
+.navigation__link--home {
+  background: url(../img/nav/home_icon.png) no-repeat center 20px;
+}
+
+.navigation__link--statistic {
+  background: url(../img/nav/statics_icon.png) no-repeat center 20px;
+}
+
+.navigation__link--user {
+  background: url(../img/nav/users_icon.png) no-repeat center 20px;
+}
+
+.navigation__link--settings {
+  background: url(../img/nav/settings_icon.png) no-repeat center 20px;
+}
+
+.navigation__link--quiry {
+  background: url(../img/nav/info_icon.png) no-repeat center 20px;
 }
 /*# sourceMappingURL=main.css.map */
