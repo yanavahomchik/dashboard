@@ -376,5 +376,30 @@ textarea {
   position: relative;
   height: 100vh;
   margin: 0 auto;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 70px;
+  height: 100vh;
+  background-color: linear-gradient(352deg, #fe547a 0%, #fd806d 100%);
 }
 /*# sourceMappingURL=main.css.map */

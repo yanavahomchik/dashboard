@@ -1,0 +1,8 @@
+.navigation {
+    position: fixed;
+    top:0;
+    @include flexible(none, none, column, nowrap);
+    width:70px;
+    height:100vh;
+    background-color: $gradient;
+}
