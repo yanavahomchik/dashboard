@@ -1,0 +1,279 @@
+.header {
+    min-height:169px;
+    margin-left: 70px;
+
+
+&__upper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+&__buttons:first-child {
+    @include tablet {
+        margin:0 auto;
+    }
+}
+
+
+&__buttons {
+    display: flex;
+    @include tablet {
+        margin-left: 120px;
+    }
+    @include tablet-sm {
+        margin-left: 130px;
+    }
+    @include mobile {
+        margin:0 auto;
+    }
+    @include mobile-lg {
+        margin:0 auto;
+    }
+
+.header__button {
+    @include flexible(center, center, column, nowrap);
+    @include mobile {
+        width:80px;
+    }
+    width: 66px;
+    height:71px;
+    border:1px solid $subtitle-color;
+}
+
+.header__button--ellipse {
+    background: url(../img/header/ellipse_icon.png) no-repeat center;
+}
+
+.header__button--folder {
+    background: url(../img/header/folder_icon.png) no-repeat center;
+}
+
+.header__button--settings {
+    background: url(../img/header/settings_icon.png) no-repeat center;
+}
+
+.header__button--upload {
+    background: url(../img/header/upload_icon.png) no-repeat center;
+}
+
+.header__button--envelope {
+    background: url(../img/header/envelope_icon.png) no-repeat center;
+}
+
+.header__button--earth {
+    background: url(../img/header/earth_icon.png) no-repeat center;
+}
+
+}
+
+
+&__search {
+    @include flexible(center, center, row, nowrap);
+    @include mobile {
+        width:240px;
+    }
+    @include tablet {
+        margin:0 auto;
+    }
+    width:550px;
+    height: 71px;
+    border:1px solid $subtitle-color;
+}
+
+&__form {
+    position: relative;
+   @include mobile {
+        width:180px;
+    }
+    width:290px;
+}
+
+&__form input{
+    border: none;
+}
+
+&__input {
+    @include mobile {
+        padding: 8px 10px 8px 10px;
+    }
+    padding: 11px 120px 11px 15px;
+    border-radius: 20px;
+    background: #EEE;
+     box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+    color: $subtitle-color;
+    font-size: $medium-text;
+    outline: none;
+}
+
+
+&__submit {
+    position: absolute;
+    @include mobile {
+        width: 20px;
+    }
+    top: 0;
+    right: 10px;
+    width: 37px;
+    height:100%;
+    cursor: pointer;
+    background: url(../img/header/zoom_icon.png) no-repeat center;
+}
+
+
+&__kendall {
+    max-height:70px;
+}
+
+&__info {
+    display: flex;
+    flex-wrap: wrap;
+    border:1px solid #C8C8C8;
+    height: 70px;
+    @include tablet-sm {
+        margin-left: 105px;
+    }
+    @include mobile {
+        margin:0 auto;
+    }
+    @include mobile-lg {
+        margin:0 auto;
+    }
+}
+
+&__text {
+    @include flexible(center, center, column, nowrap);
+}
+
+&__name {
+    @include title;
+    @include gradient;
+    padding-left:13px;
+    padding-right:13px;
+    margin-bottom: 9px;
+}
+
+&__position {
+    @include subtitle;
+    padding-left:13px;
+    padding-right:18px;
+}
+
+.kebab {
+    height:70px;
+    width:60px;
+   }
+
+.kebab {
+    &__content {
+        position: relative;
+        top:25px;
+        left:35px;
+        height: 5px;
+        width: 5px;
+        background: $bg-grey;
+        border-radius: 50%;
+    }
+}
+
+.kebab {
+    &__content::after {
+        position: absolute;
+        top: 8px;
+        left: 0px;
+        content: '';
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background: $bg-grey;
+    }
+}
+
+.kebab {
+    &__content::before {
+        position: absolute;
+        top: 16px;
+        left: 0px;
+        content: '';
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background: $bg-grey;
+    }
+}
+
+
+&__lower {
+    @include flexible(space-around, center, row, wrap);
+}
+
+&__statistic {
+    @include flexible(center, flex-start, column, wrap);
+    margin:0 10px 0 10px;
+}
+
+
+&__rise-fall {
+    @include flexible(space-between, center, row, wrap);
+    @include subtitle;
+    font-size: 12px;
+    padding-bottom: 20px;
+
+}
+
+&__rise {
+    position: relative;
+    left: 5px;
+}
+
+&__rise:before {
+    position: absolute;
+    top: 4px;
+    left: -7px;
+    content: '';
+    @include triangle-rise;
+}
+
+&__fall {
+    position: relative;
+    left: 16px;
+}
+
+&__fall:before {
+    position: absolute;
+    top: 4px;
+    left: -7px;
+    content: '';
+    @include triangle-fall;
+}
+
+&__daily {
+    @include title;
+    color:$title-color;
+    padding-top:22px;
+    margin-bottom:8px;
+}
+
+&__amount {
+    @include title;
+    @include gradient;
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+&__action {
+    border: none;
+    background: lightcyan;
+}
+
+&__action-button {
+    @include gradient;
+    margin-bottom: 3%;
+    font-family: 'Lato' sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    border: none;
+}
+
+}
+
+

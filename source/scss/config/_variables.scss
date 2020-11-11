@@ -11,6 +11,16 @@ $title-color:#777777;
  =================================================== */
  $tiny-text:8px;
  $small-text:10px;
- $medium-text:12px;
+ $medium-text:13px;
  $large-text:14px;
  $xlarge-text:40px;
+ $font-weights: (
+     "light":300,
+     "regular":400,
+     "bold":700
+ );
+
+ $mobile:360px;
+ $mobile-lg:414px;
+ $tablet:768px;
+ $tablet-small:540px;
